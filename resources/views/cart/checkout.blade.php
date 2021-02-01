@@ -23,6 +23,30 @@
         <div class="row row-sparse">
             <div class="col-lg-8 padding-right-lg">
                 <ul class="checkout-steps">
+
+                    <li>
+                        <div class="checkout-step-shipping">
+                            <h2 class="step-title">Shipping Methods</h2>
+
+
+
+
+                            <div class="form-group">
+                                <label>State/Province</label>
+                                <div class="select-custom">
+                                    <select class="form-control">
+                                        <option value="na">Новая почта</option>
+                                        <option value="courier">Доставка курьером</option>
+                                        <option value="pickup">Самовывоз</option>
+                                        <option value="overseas">За рубеж</option>
+                                    </select>
+                                </div><!-- End .select-custom -->
+                            </div><!-- End .form-group -->
+
+
+                        </div><!-- End .checkout-step-shipping -->
+                    </li>
+
                     <li>
                         <h2 class="step-title">Shipping Address</h2>
       {{--                      <div class="form-group required-field">
@@ -87,31 +111,28 @@
                                     </select>
                                 </div><!-- End .select-custom -->
                             </div><!-- End .form-group -->
-                    </li>
 
-                    <li>
-                        <div class="checkout-step-shipping">
-                            <h2 class="step-title">Shipping Methods</h2>
 
-                            <table class="table table-step-shipping">
+
+                        <table class="table table-step-shipping">
                                 <tbody>
                                 <tr>
-                                    <td><input type="radio" name="shipping-method" value="flat"></td>
-                                    <td><strong>$20.00</strong></td>
-                                    <td>Fixed</td>
-                                    <td>Flat Rate</td>
+                                    <td><input type="radio" name="payment-method" value="liq_pay"></td>
+                                    <td>LiqPay </td>
                                 </tr>
 
                                 <tr>
-                                    <td><input type="radio" name="shipping-method" value="best"></td>
-                                    <td><strong>$15.00</strong></td>
-                                    <td>Table Rate</td>
-                                    <td>Best Way</td>
+                                    <td><input type="radio" name="payment-method" value="bank_transfer"></td>
+                                    <td>Банковский перевод</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="payment-method" value="payment_pickup"></td>
+                                    <td>оплата наличными при самовывозе</td>
                                 </tr>
                                 </tbody>
                             </table>
-                        </div><!-- End .checkout-step-shipping -->
                     </li>
+
                 </ul>
             </div><!-- End .col-lg-8 -->
 

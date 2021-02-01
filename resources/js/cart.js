@@ -87,7 +87,7 @@ $(function() {
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             },
-            url: '/checkout',
+            url: '/order',
             type: 'POST',
             data: data,
             error: function(msg){

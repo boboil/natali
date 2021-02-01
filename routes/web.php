@@ -39,7 +39,7 @@ Route::post('/cart-update', 'App\Http\Controllers\CartController@update')->name(
 Route::post('/cart-remove', 'App\Http\Controllers\CartController@remove')->name('cart.remove');
 Route::get('/shopping-cart', 'App\Http\Controllers\CartController@shopping')->name('shopping.cart');
 Route::get('/checkout', 'App\Http\Controllers\CartController@checkout')->name('checkout');
-Route::get('/order', 'App\Http\Controllers\CartController@order')->name('order');
+/*Route::get('/order', 'App\Http\Controllers\CartController@order')->name('order');*/
 //Route::post('/cart-clear', 'CartController@clear')->name('cart.clear');
 /*Cart end*/
 
